@@ -41,18 +41,24 @@
 
 /* CONTENT */
 
-.section-title{
-    font-size: 48;
+.page-content{
+    width: 60%;
 }
 
+.page-content h1{
+    font-size: 48;
+    text-align: center;
+}
 .year-title{
-    font-size: 32;
+    font-size: 42;
     color: yellow;
+    text-align: left;
+    border-bottom: 2px solid white;
 }
 
 .project-container{
     text-align: left;
-    border-top: 2px solid rgb(50, 50, 50);
+    border-bottom: 2px solid rgb(50, 50, 50);
     padding-top: 2%;
     padding-bottom: 2%;
 }
