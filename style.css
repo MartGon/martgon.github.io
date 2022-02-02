@@ -1,8 +1,12 @@
 
+/* GENERAL */
+
 .centered-div {
     margin-left: auto;
     margin-right: auto;
 }
+
+/* HEADER */
 
 .header-container{
     width: 60%;
@@ -15,22 +19,6 @@
 
 .header-container h1{
     font-size: 64;
-}
-
-.section-title{
-    font-size: 48;
-}
-
-.year-title{
-    font-size: 32;
-    color: yellow;
-}
-
-.project-container{
-    text-align: left;
-    border-top: 2px solid rgb(50, 50, 50);
-    padding-top: 2%;
-    padding-bottom: 2%;
 }
 
 .nav-links-container{
@@ -49,4 +37,42 @@
 
 .nav-links-container a:hover{
     text-decoration: underline;
+}
+
+/* CONTENT */
+
+.section-title{
+    font-size: 48;
+}
+
+.year-title{
+    font-size: 32;
+    color: yellow;
+}
+
+.project-container{
+    text-align: left;
+    border-top: 2px solid rgb(50, 50, 50);
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+/* PROJECT INDEX */
+
+.index-container{
+    padding-top: 10%; padding-left:10%; padding-right: 10%; text-align: left;
+}
+
+.index-container h2{
+    text-align: center; 
+    font-size: 32;
+}
+
+.index-year-container{
+    width: 100%; 
+    margin-bottom: 5%;
+}
+
+.index-year-container h3{
+    text-align: center; border-bottom: 1px solid white; width: 100%
 }
