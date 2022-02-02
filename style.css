@@ -1,12 +1,20 @@
 
+.centered-div {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .header-container{
     width: 60%;
     border-bottom: 2px solid white;
 }
 
-.centered-div {
-    margin-left: auto;
-    margin-right: auto;
+.header-container td{
+    text-align: center;
+}
+
+.header-container h1{
+    font-size: 64;
 }
 
 .section-title{
@@ -15,6 +23,7 @@
 
 .year-title{
     font-size: 32;
+    color: yellow;
 }
 
 .project-container{
@@ -22,4 +31,22 @@
     border-top: 2px solid rgb(50, 50, 50);
     padding-top: 2%;
     padding-bottom: 2%;
+}
+
+.nav-links-container{
+    font-size: 22;
+    text-decoration: none;
+}
+
+.nav-links-container a{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.nav-links-container a:link{
+    text-decoration: none;
+}
+
+.nav-links-container a:hover{
+    text-decoration: underline;
 }
