@@ -49,11 +49,16 @@
     font-size: 48;
     text-align: center;
 }
+
+.page-content table{
+    border-collapse: collapse;
+}
+
 .year-title{
     font-size: 42;
     color: yellow;
     text-align: left;
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid rgb(120, 120, 120);
 }
 
 .project-container{
@@ -80,5 +85,5 @@
 }
 
 .index-year-container h3{
-    text-align: center; border-bottom: 1px solid white; width: 100%
+    text-align: center; border-bottom: 2px solid rgb(175, 175, 175); width: 100%
 }
