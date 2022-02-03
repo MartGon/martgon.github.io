@@ -8,9 +8,27 @@
 
 /* HEADER */
 
-.header-container{
-    width: 60%;
-    border-bottom: 2px solid white;
+@media only screen and (max-width: 719px) {
+    .header-container{
+        width: 97.5%;
+        border-bottom: 2px solid white;
+    }
+}
+
+@media only screen and (min-width: 720px) 
+{
+    .header-container{
+        width: 80%;
+        border-bottom: 2px solid white;
+    }
+}
+
+@media only screen and (min-width: 972px) 
+{
+    .header-container{
+        width: 60%;
+        border-bottom: 2px solid white;
+    }
 }
 
 .header-container td{
@@ -18,7 +36,7 @@
 }
 
 .header-container h1{
-    font-size: 64;
+    font-size: 200%;
 }
 
 .nav-links-container{
@@ -41,8 +59,24 @@
 
 /* CONTENT */
 
-.page-content{
-    width: 60%;
+@media only screen and (max-width: 719px) {
+    .page-content{
+        width: 97.5%;
+    }
+}
+
+@media only screen and (min-width: 720px) 
+{
+    .page-content{
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width: 972px) 
+{
+    .page-content{
+        width: 60%;
+    }
 }
 
 .page-content h1{
