@@ -8,27 +8,9 @@
 
 /* HEADER */
 
-@media only screen and (max-width: 719px) {
-    .header-container{
-        width: 97.5%;
-        border-bottom: 2px solid white;
-    }
-}
-
-@media only screen and (min-width: 720px) 
-{
-    .header-container{
-        width: 80%;
-        border-bottom: 2px solid white;
-    }
-}
-
-@media only screen and (min-width: 972px) 
-{
-    .header-container{
-        width: 60%;
-        border-bottom: 2px solid white;
-    }
+.header-container{
+    width: 60%;
+    border-bottom: 2px solid white;
 }
 
 .header-container td{
@@ -59,24 +41,8 @@
 
 /* CONTENT */
 
-@media only screen and (max-width: 719px) {
-    .page-content{
-        width: 97.5%;
-    }
-}
-
-@media only screen and (min-width: 720px) 
-{
-    .page-content{
-        width: 80%;
-    }
-}
-
-@media only screen and (min-width: 972px) 
-{
-    .page-content{
-        width: 60%;
-    }
+.page-content{
+    width: 60%;
 }
 
 .page-content h1{
@@ -96,11 +62,29 @@
 }
 
 .project-container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+
     text-align: left;
     border-bottom: 2px solid rgb(50, 50, 50);
     padding-top: 2%;
     padding-bottom: 2%;
 }
+
+.project-content{
+}
+
+.project-img-container{
+    
+}
+
+.project-img-container img{
+    height: auto;
+    width: 100%;
+    transition: 1s;
+}
+
 
 /* PROJECT INDEX */
 
@@ -120,4 +104,32 @@
 
 .index-year-container h3{
     text-align: center; border-bottom: 2px solid rgb(175, 175, 175); width: 100%
+}
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 1600px) {
+    .header-container{
+        width: 80%;
+    }
+
+    .page-content{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .header-container{
+        width: 95%;
+        margin: auto;
+    }
+
+    .page-content{
+        width: 95%;
+        margin: auto;
+    }
+
+    .project-container{
+        display: block;
+    }
 }
