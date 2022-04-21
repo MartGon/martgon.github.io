@@ -36,146 +36,334 @@
         </nav>
     </header>
     
-    <div class="centered-div page-content">
-        <h1>Projects</h1>
+    <div class="centered-div page-container">
+
+        <div class="index-container">
+            <h2>Contents</h2>
+
+            <div class="centered-div index-year-container">
+                <h3>2022</h3>
+            </div>
+            <div style="padding-right: 5%;">
+                BlockBuster
+                    <ul>
+                        <li>Client</li>
+                    </ul>
+            </div>
+
+            <div class="centered-div index-year-container">
+                <h3>2021</h3>
+            </div>
+            <div style="padding-right: 5%;">
+                BlockBuster
+                    <ul>
+                        <li>Editor</li>
+                        <li>rs-lag</li>
+                        <li>BlockBuster-MatchMaking</li>
+                    </ul>
+                LearnOpenGL<br>
+                AWC
+            </div>
+
+            <div class="centered-div index-year-container">
+                <h3>2020</h3>
+            </div>
+            <div style="padding-right: 5%;">
+                AWC <br>
+                Space Rogue <br>
+                DroidRisk
+            </div>
+        </div>
         
-        <p style="text-align: justify;">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-            Aliquam nulla facilisi cras fermentum odio eu. 
-            Quis ipsum suspendisse ultrices gravida dictum fusce ut placerat. 
-            Purus sit amet volutpat consequat mauris nunc congue nisi. 
-            Porttitor leo a diam sollicitudin tempor id eu nisl nunc. 
-            Sagittis id consectetur purus ut faucibus pulvinar elementum. 
-            Tellus at urna condimentum mattis. Erat imperdiet sed euismod nisi porta 
-            lorem mollis aliquam ut. Placerat duis ultricies lacus sed turpis tincidunt id.
-            Faucibus pulvinar elementum integer enim neque.
-        </p>
 
-        <table>
-        <tr>
-            <td style="width: 60%;">
-                <div>
-                    
-                
+        <div class="page-content">
+            <div class="section-header">
+                <h1>Projects</h1>
+                <p style="text-align: justify;">
+                    Here are the projects that I have been working on since 2017, when I started my journey on game development. 
+                    Most of them are developed in C++. However, my earliest projects were done using the Unity engine and
+                    lately I have been using the Rust programming language.
+                </p>
+            </div>
+            
+            <div class="section-container">
+                <div class="projects-container">
+
                     <h2 class="year-title">2022</h2>
-                    <div class="project-container">
-                        <div class="project-content">
-                            <h3>Hard Trip</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                                Aliquam nulla facilisi cras fermentum odio eu. 
-                                Quis ipsum suspendisse ultrices gravida dictum fusce ut placerat. 
-                                Purus sit amet volutpat consequat mauris nunc congue nisi. 
-                                Porttitor leo a diam sollicitudin tempor id eu nisl nunc. 
-                                Sagittis id consectetur purus ut faucibus pulvinar elementum. 
-                                Tellus at urna condimentum mattis. Erat imperdiet sed euismod nisi porta 
-                                lorem mollis aliquam ut. Placerat duis ultricies lacus sed turpis tincidunt id.
-                                Faucibus pulvinar elementum integer enim neque.
-                            </p>
-                        </div>
-                        <div class="project-img-container">
-                            <img src="https://img.itch.zone/aW1hZ2UvNDQ3MTQzLzIyNTg2MTYucG5n/347x500/ufnDS3.png">
-                        </div>
-                        <div style="padding-top: 1%;">
-                            <img src="github.png" height="32">
-                            <img src="https://itch.io/favicon.ico" height="32">
-                        </div>
-                    </div>
 
-                    <div class="project-container">
+                    <div id="block-buster-game" class="project-container">
                         <div class="project-content">
-                            <h3>Hard Trip</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                                Aliquam nulla facilisi cras fermentum odio eu. 
-                                Quis ipsum suspendisse ultrices gravida dictum fusce ut placerat. 
-                                Purus sit amet volutpat consequat mauris nunc congue nisi. 
-                                Porttitor leo a diam sollicitudin tempor id eu nisl nunc. 
-                                Sagittis id consectetur purus ut faucibus pulvinar elementum. 
-                                Tellus at urna condimentum mattis. Erat imperdiet sed euismod nisi porta 
-                                lorem mollis aliquam ut. Placerat duis ultricies lacus sed turpis tincidunt id.
-                                Faucibus pulvinar elementum integer enim neque.
-                            </p>
+                            <div class="project-content-text">
+                            
+                                <h3>Block Buster - Game</h3>
+                                <p style="text-align: justify;" >
+                                    Block Buster is a multiplayer voxel first person shooter made in C++. It features
+                                    seven different types of weapons and four unique game modes. 
+                                    Its most important feature is its own <a href="#block-buster-editor">map editor</a>. The maps created
+                                    using this tool can then be played on by uploading them to the match-making server, which
+                                    is a different project made in Rust.
+                                </p>
+
+                                <p style="text-align: justify;" >
+                                    I started this project so I could practice two subjects I was interested at
+                                    the time: computer graphics and game networking. This was the first time I could
+                                    practice all that I learned on the <a href="https://learnopengl.com/">LearnOpenGL</a> tutorials.
+                                    It was also a great opportunity to  try out a Client-Server architecture, a very different
+                                    approach to the Lockstep technique I used in <a href="#archers-duel">Archer's Duel</a> development.
+                                </p>
+
+                                <p style="text-align: justify;" >
+                                    This project as a whole, took almost one year to complete. However,
+                                    most of the time I invested on this project during 2022 was almost exclusively
+                                    dedicated to develop the client and the game's server.
+                                </p>
+                            </div>
+
+                            <div style="height: 32px;">
+                                <a style="text-decoration: none;" href="https://github.com/MartGon/BlockBuster">
+                                    <img src="github.png" height="32">
+                                </a>
+                                <a href="https://defu.itch.io/block-buster">
+                                    <img src="https://itch.io/favicon.ico" height="32">
+                                </a>
+                            </div>
+
                         </div>
                         <div class="project-img-container">
-                            <img src="https://img.itch.zone/aW1hZ2UvNDQ3MTQzLzIyNTg2MTYucG5n/347x500/ufnDS3.png">
+                            <img src="https://github.com/MartGon/BlockBuster/blob/main/docs/game/itchio/imgs/Gameplay1.png?raw=true">
                         </div>
-                        <div style="padding-top: 1%;">
-                            <img src="github.png" height="32">
-                            <img src="https://itch.io/favicon.ico" height="32">
-                        </div>
+        
                     </div>
 
                     <h2 class="year-title">2021</h2>
 
-                    <div class="project-container">
+                    <div id="block-buster-editor" class="project-container">
                         <div class="project-content">
-                            <h3>Hard Trip</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                                Aliquam nulla facilisi cras fermentum odio eu. 
-                                Quis ipsum suspendisse ultrices gravida dictum fusce ut placerat. 
-                                Purus sit amet volutpat consequat mauris nunc congue nisi. 
-                                Porttitor leo a diam sollicitudin tempor id eu nisl nunc. 
-                                Sagittis id consectetur purus ut faucibus pulvinar elementum. 
-                                Tellus at urna condimentum mattis. Erat imperdiet sed euismod nisi porta 
-                                lorem mollis aliquam ut. Placerat duis ultricies lacus sed turpis tincidunt id.
-                                Faucibus pulvinar elementum integer enim neque.
-                            </p>
+                            <div class="project-content-text">
+                            
+                                <h3>Block Buster - Editor</h3>
+                                <p style="text-align: justify;" >
+                                    Block Buster is a multiplayer voxel first person shooter made in C++. It features
+                                    seven different types of weapons and four unique game modes. 
+                                    Its most important feature is its own Map editor. The maps created
+                                    using this tool can then be played on by uploading them to the match-making server, which
+                                    is a different project made in Rust.
+                                </p>
+
+                                <p style="text-align: justify;" >
+                                    I started this project so I could practice two subjects I was interested at
+                                    the time: computer graphics and game networking. This was the first time I could
+                                    practice all that I learned on the <a href="https://learnopengl.com/">LearnOpenGL</a> tutorials.
+                                    It was also a great opportunity to  try out a Client-Server architecture, a very different
+                                    approach to the Lockstep technique I used in <a href="#block-buster-game">Archer's Duel</a> development.
+                                </p>
+
+                                <p style="text-align: justify;" >
+                                    This project as a whole, took almost one year to complete. However,
+                                    most of the time I invested on this project during 2022 was almost exclusively
+                                    dedicated to develop the client and the game's server.
+                                </p>
+                            </div>
+
+                            <div style="height: 32px;">
+                                <a style="text-decoration: none;" href="https://github.com/MartGon/BlockBuster">
+                                    <img src="github.png" height="32">
+                                </a>
+                                <a href="https://defu.itch.io/blockbuster-editor">
+                                    <img src="https://itch.io/favicon.ico" height="32">
+                                </a>
+                            </div>
+
                         </div>
                         <div class="project-img-container">
-                            <img src="https://img.itch.zone/aW1hZ2UvNDQ3MTQzLzIyNTg2MTYucG5n/347x500/ufnDS3.png">
-                        </div>
-                        <div style="padding-top: 1%;">
-                            <img src="github.png" height="32">
-                            <img src="https://itch.io/favicon.ico" height="32">
+                            <img src="https://github.com/MartGon/BlockBuster/blob/main/docs/editor/itchio/maps/Editor.png?raw=true">
                         </div>
                     </div>
+                    
+                    <div id="block-buster-matchmaking" class="project-container">
+                        <div class="project-content">
+                            <div class="project-content-text">
+                            
+                                <h3>Block Buster - Match-making Server</h3>
+                                <p style="text-align: justify;" >
+                                    Block Buster is a multiplayer voxel first person shooter made in C++. It features
+                                    seven different types of weapons and four unique game modes. 
+                                    Its most important feature is its own Map editor. The maps created
+                                    using this tool can then be played on by uploading them to the match-making server, which
+                                    is a different project made in Rust.
+                                </p>
+
+                                <p style="text-align: justify;" >
+                                    I started this project so I could practice two subjects I was interested at
+                                    the time: computer graphics and game networking. This was the first time I could
+                                    practice all that I learned on the <a href="https://learnopengl.com/">LearnOpenGL</a> tutorials.
+                                    It was also a great opportunity to  try out a Client-Server architecture, a very different
+                                    approach to the Lockstep technique I used in <a href="#block-buster-game">Archer's Duel</a> development.
+                                </p>
+
+                                <p style="text-align: justify;" >
+                                    This project as a whole, took almost one year to complete. However,
+                                    most of the time I invested on this project during 2022 was almost exclusively
+                                    dedicated to develop the client and the game's server.
+                                </p>
+                            </div>
+
+                            <div style="height: 32px;">
+                                <a style="text-decoration: none;" href="https://github.com/MartGon/BlockBuster">
+                                    <img src="github.png" height="32">
+                                </a>
+                                <a href="https://defu.itch.io/blockbuster-editor">
+                                    <img src="https://itch.io/favicon.ico" height="32">
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="project-img-container">
+                            <img src="https://github.com/MartGon/BlockBuster/blob/main/docs/editor/itchio/maps/Editor.png?raw=true">
+                        </div>
+                    </div>
+
+                    <div id="rs-lag" class="project-container">
+                        <div class="project-content">
+                            <div class="project-content-text">
+                            
+                                <h3>rs-lag</h3>
+                                <p style="text-align: justify;" >
+                                    Block Buster is a multiplayer voxel first person shooter made in C++. It features
+                                    seven different types of weapons and four unique game modes. 
+                                    Its most important feature is its own Map editor. The maps created
+                                    using this tool can then be played on by uploading them to the match-making server, which
+                                    is a different project made in Rust.
+                                </p>
+
+                                <p style="text-align: justify;" >
+                                    I started this project so I could practice two subjects I was interested at
+                                    the time: computer graphics and game networking. This was the first time I could
+                                    practice all that I learned on the <a href="https://learnopengl.com/">LearnOpenGL</a> tutorials.
+                                    It was also a great opportunity to  try out a Client-Server architecture, a very different
+                                    approach to the Lockstep technique I used in <a href="#block-buster-game">Archer's Duel</a> development.
+                                </p>
+
+                                <p style="text-align: justify;" >
+                                    This project as a whole, took almost one year to complete. However,
+                                    most of the time I invested on this project during 2022 was almost exclusively
+                                    dedicated to develop the client and the game's server.
+                                </p>
+                            </div>
+
+                            <div style="height: 32px;">
+                                <a style="text-decoration: none;" href="https://github.com/MartGon/BlockBuster">
+                                    <img src="github.png" height="32">
+                                </a>
+                                <a href="https://defu.itch.io/blockbuster-editor">
+                                    <img src="https://itch.io/favicon.ico" height="32">
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="project-img-container">
+                            <img src="https://github.com/MartGon/BlockBuster/blob/main/docs/editor/itchio/maps/Editor.png?raw=true">
+                        </div>
+                    </div>
+                    
+                    <h2 class="year-title">2020</h2>
+
+                    <div id="awc" class="project-container">
+                        <div class="project-content">
+                            <div class="project-content-text">
+                            
+                                <h3>AWC (Advance Wars Clone)</h3>
+                                <p style="text-align: justify;" >
+                                    Block Buster is a multiplayer voxel first person shooter made in C++. It features
+                                    seven different types of weapons and four unique game modes. 
+                                    Its most important feature is its own Map editor. The maps created
+                                    using this tool can then be played on by uploading them to the match-making server, which
+                                    is a different project made in Rust.
+                                </p>
+
+                                <p style="text-align: justify;" >
+                                    I started this project so I could practice two subjects I was interested at
+                                    the time: computer graphics and game networking. This was the first time I could
+                                    practice all that I learned on the <a href="https://learnopengl.com/">LearnOpenGL</a> tutorials.
+                                    It was also a great opportunity to  try out a Client-Server architecture, a very different
+                                    approach to the Lockstep technique I used in <a href="#block-buster-game">Archer's Duel</a> development.
+                                </p>
+
+                                <p style="text-align: justify;" >
+                                    This project as a whole, took almost one year to complete. However,
+                                    most of the time I invested on this project during 2022 was almost exclusively
+                                    dedicated to develop the client and the game's server.
+                                </p>
+                            </div>
+
+                            <div style="height: 32px;">
+                                <a style="text-decoration: none;" href="https://github.com/MartGon/BlockBuster">
+                                    <img src="github.png" height="32">
+                                </a>
+                                <a href="https://defu.itch.io/blockbuster-editor">
+                                    <img src="https://itch.io/favicon.ico" height="32">
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="project-img-container">
+                            <img src="https://github.com/MartGon/BlockBuster/blob/main/docs/editor/itchio/maps/Editor.png?raw=true">
+                        </div>
+                    </div>
+
+                    <div id="space-rogue" class="project-container">
+                        <div class="project-content">
+                            <div class="project-content-text">
+                            
+                                <h3>Space Rogue</h3>
+                                <p style="text-align: justify;" >
+                                    Block Buster is a multiplayer voxel first person shooter made in C++. It features
+                                    seven different types of weapons and four unique game modes. 
+                                    Its most important feature is its own Map editor. The maps created
+                                    using this tool can then be played on by uploading them to the match-making server, which
+                                    is a different project made in Rust.
+                                </p>
+
+                                <p style="text-align: justify;" >
+                                    I started this project so I could practice two subjects I was interested at
+                                    the time: computer graphics and game networking. This was the first time I could
+                                    practice all that I learned on the <a href="https://learnopengl.com/">LearnOpenGL</a> tutorials.
+                                    It was also a great opportunity to  try out a Client-Server architecture, a very different
+                                    approach to the Lockstep technique I used in <a href="#block-buster-game">Archer's Duel</a> development.
+                                </p>
+
+                                <p style="text-align: justify;" >
+                                    This project as a whole, took almost one year to complete. However,
+                                    most of the time I invested on this project during 2022 was almost exclusively
+                                    dedicated to develop the client and the game's server.
+                                </p>
+                            </div>
+
+                            <div style="height: 32px;">
+                                <a style="text-decoration: none;" href="https://github.com/MartGon/BlockBuster">
+                                    <img src="github.png" height="32">
+                                </a>
+                                <a href="https://defu.itch.io/blockbuster-editor">
+                                    <img src="https://itch.io/favicon.ico" height="32">
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="project-img-container">
+                            <img src="https://github.com/MartGon/BlockBuster/blob/main/docs/editor/itchio/maps/Editor.png?raw=true">
+                        </div>
+                    </div>
+
 
                 </div>
-            </td>
+            </div>
+            
+        </div>
 
-            <td style="width: 20%; vertical-align: top;">
-                <div class="index-container">
-                    <h2>Project Index</h2>
+        <div class="dummy">
 
-                    <div class="centered-div index-year-container">
-                        <h3>2022</h3>
-                    </div>
-                    <div style="padding-left: 5%;">
-                        BlockBuster
-                            <ul>
-                                <li>Client</li>
-                            </ul>
-                    </div>
+        </div>
 
-                    <div class="centered-div index-year-container">
-                        <h3>2021</h3>
-                    </div>
-                    <div style="padding-left: 5%;">
-                        BlockBuster
-                            <ul>
-                                <li>Editor</li>
-                                <li>rs-lag</li>
-                                <li>BlockBuster-MatchMaking</li>
-                            </ul>
-                        LearnOpenGL<br>
-                        AWC
-                    </div>
-
-                    <div class="centered-div index-year-container">
-                        <h3>2020</h3>
-                    </div>
-                    <div style="padding-left: 5%;">
-                        AWC <br>
-                        Space Rogue <br>
-                        DroidRisk
-                    </div>
-                </div>
-            </td>
-        </tr>
-        </table>
     </div>
 </body>
 
