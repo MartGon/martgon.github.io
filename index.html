@@ -99,17 +99,17 @@
                                 <p style="text-align: justify;" >
                                     Block Buster is a multiplayer voxel first person shooter made in C++. It features
                                     seven different types of weapons and four unique game modes. 
-                                    Its most important feature is its own <a href="#block-buster-editor">map editor</a>. The maps created
-                                    using this tool can then be played on by uploading them to the match-making server, which
-                                    is a different project made in Rust.
+                                    In addition, it counts with its own <a href="#block-buster-editor">map editor</a>. The maps created
+                                    using this tool can then be played on by uploading them to the <a href="#block-buster-matchmaking">match-making server</a>.
                                 </p>
 
                                 <p style="text-align: justify;" >
                                     I started this project so I could practice two subjects I was interested at
-                                    the time: computer graphics and game networking. This was the first time I could
-                                    practice all that I learned on the <a href="https://learnopengl.com/">LearnOpenGL</a> tutorials.
-                                    It was also a great opportunity to  try out a Client-Server architecture, a very different
+                                    the time: computer graphics, which I had previously learnt from the <a href="https://learnopengl.com/">LearnOpenGL</a> tutorials, 
+                                    and game networking. It was a great opportunity to try out implementing a Client-Server architecture, a very different
                                     approach to the Lockstep technique I used in <a href="#archers-duel">Archer's Duel</a> development.
+                                    In order to provide a decent game experience over different network conditions, I did also had to implement
+                                    fairly common game networking techniques, such as client prediction and entity interpolation.
                                 </p>
 
                                 <p style="text-align: justify;" >
@@ -119,8 +119,8 @@
                                 </p>
                             </div>
 
-                            <div style="height: 32px;">
-                                <a style="text-decoration: none;" href="https://github.com/MartGon/BlockBuster">
+                            <div class="project-button-container">
+                                <a href="https://github.com/MartGon/BlockBuster">
                                     <img src="github.png" height="32">
                                 </a>
                                 <a href="https://defu.itch.io/block-buster">
@@ -143,25 +143,24 @@
                             
                                 <h3>Block Buster - Editor</h3>
                                 <p style="text-align: justify;" >
-                                    Block Buster is a multiplayer voxel first person shooter made in C++. It features
-                                    seven different types of weapons and four unique game modes. 
-                                    Its most important feature is its own Map editor. The maps created
-                                    using this tool can then be played on by uploading them to the match-making server, which
-                                    is a different project made in Rust.
+                                    This is the map editor tool for my voxel first person shooter <a href="#block-buster">Block Buster</a>. It allows
+                                    users to create or modify maps that can be used in multiplayer games. It provides some basic tools to place, paint or remove blocks,
+                                    but it also allows for more complex operations through its <em>select</em> tool. Typical functionality such as copy, cut, paste, undo, redo,
+                                    search and replace, etc. is also supported. Game objects such as weapons, grenades, health packs, teleporters and more can also be placed
+                                    around the map with the <em>Game Object</em> set of tools.
                                 </p>
 
                                 <p style="text-align: justify;" >
-                                    I started this project so I could practice two subjects I was interested at
-                                    the time: computer graphics and game networking. This was the first time I could
-                                    practice all that I learned on the <a href="https://learnopengl.com/">LearnOpenGL</a> tutorials.
-                                    It was also a great opportunity to  try out a Client-Server architecture, a very different
-                                    approach to the Lockstep technique I used in <a href="#block-buster-game">Archer's Duel</a> development.
+                                    Providing a map editor was one of the main goals of the <a href="#block-buster">Block Buster</a> project. I love when a 
+                                    game I like includes some sort of tool which allows for user created content, such as <em>Halo</em> with its <em>Forge</em>
+                                    mode or <em>Advance Wars</em> with its <em>Design room</em>, specially when that content can be used in multiplayer gameplay. In my opinion,
+                                    including such a tool provides huge benefits at a rather small cost: it provides a way to produce free content for your game and keep its
+                                    community active.
                                 </p>
 
                                 <p style="text-align: justify;" >
-                                    This project as a whole, took almost one year to complete. However,
-                                    most of the time I invested on this project during 2022 was almost exclusively
-                                    dedicated to develop the client and the game's server.
+                                    The map editor was the first part of the project I implemented. The first ready-to-use version of the tool took around 3 months
+                                    to create. However, as the main project was developed, further modifications and optimizations had to be made to this tool.
                                 </p>
                             </div>
 
