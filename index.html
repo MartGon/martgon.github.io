@@ -185,40 +185,32 @@
                             
                                 <h3>Block Buster - Match-making Server</h3>
                                 <p style="text-align: justify;" >
-                                    Block Buster is a multiplayer voxel first person shooter made in C++. It features
-                                    seven different types of weapons and four unique game modes. 
-                                    Its most important feature is its own Map editor. The maps created
-                                    using this tool can then be played on by uploading them to the match-making server, which
-                                    is a different project made in Rust.
+                                    This program is one of my set of projects which are of part of <a href="#block-buster">Block Buster</a>, my voxel multiplayer first person shooter.
+                                    The match-making server provides a REST API which is used by the game clients to find, create and join multiplayer games. Additionally, it also allows users to share the maps
+                                    they created using the <a href="#block-buster-editor">map editor</a>. Unlike the other <a href="#block-buster">Block Buster</a> set of projects, this one is made in Rust, instead of C++.
                                 </p>
 
                                 <p style="text-align: justify;" >
-                                    I started this project so I could practice two subjects I was interested at
-                                    the time: computer graphics and game networking. This was the first time I could
-                                    practice all that I learned on the <a href="https://learnopengl.com/">LearnOpenGL</a> tutorials.
-                                    It was also a great opportunity to  try out a Client-Server architecture, a very different
-                                    approach to the Lockstep technique I used in <a href="#block-buster-game">Archer's Duel</a> development.
+                                    Another of the main goals of the <a href="#block-buster">Block Buster</a> project was to provide online multiplayer functionality. A subset of issues that arise when making this decision have to do
+                                    with how the client connects to a game server. Does the player have to type the server's address they wish to connect to? Do they simply press a button which then puts the in an apparently random match?
+                                    Or can they choose a match within a list of already created games? The first case was a path that I already explored when I was working in <a href="#archers-duel">Archer's Duel</a>, so I opted for the third
+                                    option this time.
                                 </p>
-
                                 <p style="text-align: justify;" >
-                                    This project as a whole, took almost one year to complete. However,
-                                    most of the time I invested on this project during 2022 was almost exclusively
-                                    dedicated to develop the client and the game's server.
+                                    <strong>Disclaimer:</strong> As you may have noticed, due to the project's name you might have thought that I had chosen the second option, and you'd be almost right. That was the first idea,
+                                    which gave birth to the project and its name, but it was never implemented. I opted for the server brower approach very early on development, the name stayed the same, however. So I do agree that it may be a bit misleading.
                                 </p>
                             </div>
 
                             <div style="height: 32px;">
-                                <a style="text-decoration: none;" href="https://github.com/MartGon/BlockBuster">
+                                <a style="text-decoration: none;" href="https://github.com/MartGon/BlockBuster-MatchMaking">
                                     <img src="github.png" height="32">
-                                </a>
-                                <a href="https://defu.itch.io/blockbuster-editor">
-                                    <img src="https://itch.io/favicon.ico" height="32">
                                 </a>
                             </div>
 
                         </div>
                         <div class="project-img-container">
-                            <img src="https://github.com/MartGon/BlockBuster/blob/main/docs/editor/itchio/maps/Editor.png?raw=true">
+                            <img src="https://github.com/MartGon/BlockBuster/blob/main/docs/game/itchio/imgs/Menu.png?raw=true">
                         </div>
                     </div>
 
