@@ -75,7 +75,6 @@
             </div>
         </div>
         
-
         <div class="page-content">
             <div class="section-header">
                 <h1>Projects</h1>
@@ -220,34 +219,27 @@
                             
                                 <h3>rs-lag</h3>
                                 <p style="text-align: justify;" >
-                                    Block Buster is a multiplayer voxel first person shooter made in C++. It features
-                                    seven different types of weapons and four unique game modes. 
-                                    Its most important feature is its own Map editor. The maps created
-                                    using this tool can then be played on by uploading them to the match-making server, which
-                                    is a different project made in Rust.
+                                    <em>rs-lag</em> is the first project I developed in Rust. This program works as an UDP proxy to simulate network conditions. 
+                                    Different network parameters, such as RTT, jitter, packet loss, packet duplication and packtet unordering can be configured through its command line interface.
                                 </p>
 
                                 <p style="text-align: justify;" >
-                                    I started this project so I could practice two subjects I was interested at
-                                    the time: computer graphics and game networking. This was the first time I could
-                                    practice all that I learned on the <a href="https://learnopengl.com/">LearnOpenGL</a> tutorials.
-                                    It was also a great opportunity to  try out a Client-Server architecture, a very different
-                                    approach to the Lockstep technique I used in <a href="#block-buster-game">Archer's Duel</a> development.
+                                    After a few years practicing C++, and experiencing some of the common problems that arise when using it,
+                                    I thought it was a good moment to try out a new programming language. I had already used C#, when working on some of my Unity projects, and I was also tired of Java, because 
+                                    we employed it a lot during my bachelor, so those two were not an option. I particularly enjoy low level languages because of the degree of control they provide, but I also don't like to miss out some
+                                    of the handy high-level features, such as containers or a basic OS abstraction layer. In my opinion, Rust has the best of both worlds.
                                 </p>
 
                                 <p style="text-align: justify;" >
-                                    This project as a whole, took almost one year to complete. However,
-                                    most of the time I invested on this project during 2022 was almost exclusively
-                                    dedicated to develop the client and the game's server.
+                                    Developing this program was a nice opportunity to put in practice what I learnt reading <a href="https://doc.rust-lang.org/book/">the book</a>. 
+                                    At this time I already had started what would be the foundations of the <a href="#block-buster">Block Buster</a> project, so I knew that I would have to test its networking implementation somehow.
+                                    After checking that Rust provided basic UDP sockets functionality, the decision was already made.
                                 </p>
                             </div>
 
                             <div style="height: 32px;">
-                                <a style="text-decoration: none;" href="https://github.com/MartGon/BlockBuster">
+                                <a style="text-decoration: none;" href="https://github.com/MartGon/rs-lag">
                                     <img src="github.png" height="32">
-                                </a>
-                                <a href="https://defu.itch.io/blockbuster-editor">
-                                    <img src="https://itch.io/favicon.ico" height="32">
                                 </a>
                             </div>
 
