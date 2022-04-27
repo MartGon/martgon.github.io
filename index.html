@@ -108,7 +108,7 @@
                                     and game networking. It was a great opportunity to try out implementing a Client-Server architecture, a very different
                                     approach to the Lockstep technique I used in <a href="#archers-duel">Archer's Duel</a> development.
                                     In order to provide a decent game experience over different network conditions, I did also had to implement
-                                    fairly common game networking techniques, such as client prediction and entity interpolation.
+                                    fairly common game networking techniques, such as client prediction, entity interpolation and lag compensation.
                                 </p>
 
                                 <p style="text-align: justify;" >
@@ -257,7 +257,7 @@
                             
                                 <h3>AWC (Advance Wars Clone)</h3>
                                 <p style="text-align: justify;" >
-                                    AWC is probably my most chaotic project. By its the name, you may think that this is simply another Advance Wars clone, but it's actually a library.
+                                    AWC is probably my most chaotic project. By its name, you may think that this is simply another Advance Wars clone, but it's actually a library.
                                     A library I made with the intention of providing some core functionality to implement any 2D turn based strategy game. It was my first project to support Lua
                                     scripting, which can be used to create maps and units. I also made a <a href="https://github.com/MartGon/CLIChess">CLI implementation of chess</a> 
                                     using the library in order to test how it would be used in actual projects.
@@ -294,40 +294,49 @@
                             
                                 <h3>Space Rogue</h3>
                                 <p style="text-align: justify;" >
-                                    Block Buster is a multiplayer voxel first person shooter made in C++. It features
-                                    seven different types of weapons and four unique game modes. 
-                                    Its most important feature is its own Map editor. The maps created
-                                    using this tool can then be played on by uploading them to the match-making server, which
-                                    is a different project made in Rust.
+                                    Space Rogue is a game where you play as a bounty hunter doing a scavenge mission on a territory packed with hostile spaceships. During your mission,
+                                    an old massive star died, triggering a supernova which you must escape from. The game features three different weapons and two different game modes:
+                                    
+                                    <ul><strong>Race</strong>: You must escape from the explosion while dealing with enemies and different obstacles along the way.</ul>
+                                    <ul><strong>Scavenge</strong>: You need to recover 30 resources. However, you'll still need to fight enemies and avoid the explosion.</ul>
                                 </p>
 
                                 <p style="text-align: justify;" >
-                                    I started this project so I could practice two subjects I was interested at
-                                    the time: computer graphics and game networking. This was the first time I could
-                                    practice all that I learned on the <a href="https://learnopengl.com/">LearnOpenGL</a> tutorials.
-                                    It was also a great opportunity to  try out a Client-Server architecture, a very different
-                                    approach to the Lockstep technique I used in <a href="#block-buster-game">Archer's Duel</a> development.
+                                    This was a group project I made with some friends using the Unity engine. Due to COVID-19,
+                                    most of my friends and I were stuck at home, so one day that we were particularly bored, I proposed (intially as a joke) that we should make
+                                    a game together. To my surprise, the idea was actually very well recieved. We decided that everyone should 
+                                    bring some game ideas that we then could discuss. After careful consideration, we realized that most of these ideas
+                                    were too ambitious, so we thought the best plan would be to work in two groups of four people and make a fairly simple game in three weeks or less. 
+                                    That way, everyone could get some practice working in making games as a team.
                                 </p>
 
                                 <p style="text-align: justify;" >
-                                    This project as a whole, took almost one year to complete. However,
-                                    most of the time I invested on this project during 2022 was almost exclusively
-                                    dedicated to develop the client and the game's server.
+                                    This is how Space Rogue was born. It was initally planned to be a Jet Fighter clone, but due to my previous experience
+                                    with procedural content generation we decided to take a fairly different approach. The obstacles and enemy placement would
+                                    be different each attempt, and the scenario is pseudo infinite. To keep it simple, we opted to design only three types 
+                                    of enemies (which are implemented using steering behaviours) and three types of weapons or power ups.
+                                </p>
+
+                                <p style="text-align: justify;">
+                                    This project was made by the team I was part of, (very originally) called <em>Team 1</em>. The game made by
+                                    <em>Team 2</em> is a very funny and bizarre take on <em>Mario Kart</em>, appropiately called <em>Mario Car: Wild & Furious</em>. Make sure to check It
+                                    out <a href="https://savgs.xoanweb.com/wild-furious/demo/">here</a>.  Make sure to browse its <a href="https://github.com/savg-studio/wild-furious">repo</a> as well.
                                 </p>
                             </div>
 
                             <div style="height: 32px;">
-                                <a style="text-decoration: none;" href="https://github.com/MartGon/BlockBuster">
+                                <a style="text-decoration: none;" href="https://github.com/savg-studio/MiniProjectTeam1">
                                     <img src="github.png" height="32">
                                 </a>
-                                <a href="https://defu.itch.io/blockbuster-editor">
+                                <a href="https://defu.itch.io/space-rogue">
                                     <img src="https://itch.io/favicon.ico" height="32">
                                 </a>
                             </div>
 
                         </div>
                         <div class="project-img-container">
-                            <img src="https://github.com/MartGon/BlockBuster/blob/main/docs/editor/itchio/maps/Editor.png?raw=true">
+                            <img src="https://camo.githubusercontent.com/0dc6a1e8f4277360b5212774af3a415654b9599f97ca2bb68a0556f4f27cbc9c/68747470733a2f2f692e696d6775722e636f6d2f634b427a5862672e706e67">
+                            <img src="https://camo.githubusercontent.com/6154f6f730fd38cc6ea1433845aef68ff3e503f0e9910b20ebc125a6a59c2942/68747470733a2f2f692e696d6775722e636f6d2f704d43423446302e706e67">
                         </div>
                     </div>
 
