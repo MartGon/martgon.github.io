@@ -79,7 +79,7 @@
             <div class="section-header">
                 <h1>Projects</h1>
                 <p style="text-align: justify;">
-                    Here are the projects that I have been working on since 2017, when I started my journey on game development. 
+                    Here are the projects that I have been working on since 2017, when I started my journey on game development as a hobby. 
                     Most of them are developed in C++. However, my earliest projects were done using the Unity engine and
                     lately I have been using the Rust programming language.
                 </p>
@@ -159,7 +159,7 @@
 
                                 <p style="text-align: justify;" >
                                     The map editor was the first part of the project I implemented. The first ready-to-use version of the tool took around 3 months
-                                    to create. However, as the main project was developed, further modifications and optimizations had to be made to this tool.
+                                    to create. However, as the main project was developed, further modifications and optimizations had to be made.
                                 </p>
                             </div>
 
@@ -311,7 +311,7 @@
                                 </p>
 
                                 <p style="text-align: justify;" >
-                                    This is how Space Rogue was born. It was initally planned to be a Jet Fighter clone, but due to my previous experience
+                                    The game was initally planned to be a Jet Fighter clone, but due to my previous experience
                                     with procedural content generation we decided to take a fairly different approach. The obstacles and enemy placement would
                                     be different each attempt, and the scenario is pseudo infinite. To keep it simple, we opted to design only three types 
                                     of enemies (which are implemented using steering behaviours) and three types of weapons or power ups.
@@ -340,6 +340,46 @@
                         </div>
                     </div>
 
+                    <h2 class="year-title">2019</h2>
+                    
+                    <div id="DroidRisk" class="project-container">
+                        <div class="project-content">
+                            <div class="project-content-text">
+                            
+                                <h3>DroidRisk</h3>
+                                <p style="text-align: justify;" >
+                                    In spite of the fact that this project is not directly related with game development, I've decided to included it, as it was still quite interesting to make. 
+                                    DroidRisk is an Android malware classification tool which I presented as my Cybersecurity master project. It's implemented on Python3, using the scikit-learn library. 
+                                    My approach is purely based on static analysis with the objective of achieving early detection of malware. In order to do this, I had to train four different AI models, each of them
+                                    with static features of a particular category, such as Android permissions or the strings found within the app. 
+                                    After ensuring that the validity of the results employing <em>10 Fold cross validation</em>, the program scores 98% accuracy by combining the results of the four models.
+                                </p>
+
+                                <p style="text-align: justify;" >
+                                    The original idea was proposed to me by my professor. I decided to make this project because I thought it would be interesting to work in something related with AI. At that time, I already was planning to make an strategy game some day
+                                    so I thought that this could be a great opportunity to learn something that I might be able to apply to it. 
+                                </p>
+
+                                <p style="text-align: justify;">
+                                    Even though AI is a topic I am not as passionate about as game development, it was still a fun experience. Previously to the development phase,
+                                    I had to do intensive research of the state of the art and came with the idea of using <em>Ensemble Learning</em> after checking that the concept wasn't particularly explored
+                                    in Android malware classification. Despite the fact that it wasn't necessary, I decided to assemble my own dataset of samples, which was made of around 800 applications, half of them being malware. 
+                                    I found my malware samples using the webpage <a href="https://koodous.com">Koodous</a>, which is a collaborative platform were applications are uploaded at a daily basis and they are classified by many malware analysts.
+                                    The so called <em>goodware</em> samples were obtained from Google Play.
+                                </p>
+                            </div>
+
+                            <div style="height: 32px;">
+                                <a style="text-decoration: none;" href="https://github.com/MartGon/MalwareClassifier">
+                                    <img src="github.png" height="32">
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="project-img-container">
+                            <img src="https://camo.githubusercontent.com/0dc6a1e8f4277360b5212774af3a415654b9599f97ca2bb68a0556f4f27cbc9c/68747470733a2f2f692e696d6775722e636f6d2f634b427a5862672e706e67">
+                        </div>
+                    </div>
 
                 </div>
             </div>
