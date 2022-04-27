@@ -128,6 +128,20 @@
     text-align: center; border-bottom: 2px solid rgb(175, 175, 175); width: 100%
 }
 
+.index-project-list{
+    padding-right: 5%;
+    
+}
+.index-project-list a{
+    padding-right: 5%;
+    text-decoration: none;
+}
+
+.index-project-list a:hover{
+    text-decoration: underline;
+}
+
+
 /* RESPONSIVE */
 
 @media only screen and (max-width: 1600px) {
