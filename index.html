@@ -541,6 +541,45 @@
                         </div>
                     </div>
 
+                    <div id="dungeon-gen" class="project-container">
+                        <div class="project-content">
+                            <div class="project-content-text">
+                            
+                                <h3>Dungeon Gen</h3>
+                                <p style="text-align: justify;" >
+                                    This is one of my four games that make up my bachelor's project about procedural content generation. It's a rogue-like shooter where you explore sci-fi dungeons which are procedurally generated.
+                                    Along the way, you'll find different enemies whose power increases as you go deeper into the dungeon. In order to progress in some levels, you'll have to find keys to open 
+                                    the gates that lead to the next floor. During you exploration, you may also find different weapons which can aid you in your quest.
+                                </p>
+
+                                <p style="text-align: justify;" >
+                                    The process to generate the dungeon is based on binary space partition, which generates a graph model. Each leaf node of the graph corresponds to a rooom in the dungeon, and the connections
+                                    between them are made by following the graph. That is, a room can only connect to another only if they have the same parent on the upper graph level. The rooms are connected to each other using corridors,
+                                    whose path is calculated using the A* algorithm, a variation of Dijkstra's.
+                                </p>
+
+                                <p style="text-align: justify;" >
+                                    The placement of keys is done following the graph model as well, and it's dependant on which room the player spawns. 
+                                    This is necessary in order to avoid generating a dungeon which is impossible to complete, because a key could end up being placed behind its corresponding gate. Due to the fact that the graph
+                                    represents how the rooms are connected, this situation can be avoided.
+                                </p>
+                            </div>
+
+                            <div style="height: 32px;">
+                                <a style="text-decoration: none;" href="https://github.com/MartGon/DungeonGen">
+                                    <img src="github.png" height="32">
+                                </a>
+                                <a href="https://defu.itch.io/dungeon-gen">
+                                    <img src="https://itch.io/favicon.ico" height="32">
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="project-img-container">
+                            <img src="https://camo.githubusercontent.com/227d0e05f272a95f20cb1cefd7b1528797637f83485c8a8325e2ffd89eb7adbf/68747470733a2f2f696d6775722e636f6d2f4f3147484871352e706e67">
+                        </div>
+                    </div>
+
                 </div>
             </div>
             
