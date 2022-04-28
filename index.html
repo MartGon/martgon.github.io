@@ -40,43 +40,47 @@
 
         <div class="index-container">
             <h2>Contents</h2>
+            
+            <div class="index-content-container centered-div">
 
-            <div class="centered-div index-year-container">
-                <h3>2022</h3>
-            </div>
-            <div class="index-project-list">
-                BlockBuster
-                <ul>
-                    <li><a href="#block-buster-game">Game</a></li>
-                </ul>
-            </div>
-
-            <div class="centered-div index-year-container">
-                <h3>2021</h3>
-            </div>
-            <div class="index-project-list">
-                BlockBuster
+                <div class="centered-div index-year-container">
+                    <h3>2022</h3>
+                </div>
+                <div class="index-project-list">
+                    BlockBuster
                     <ul>
-                        <li><a href="#block-buster-editor">Editor</a></li>
-                        <li><a href="#block-buster-matchmaking">MatchMaking</a></li>
+                        <li><a href="#block-buster-game">Game</a></li>
                     </ul>
-                <a href="#rs-lag">rs-lag</a>
-            </div>
+                </div>
 
-            <div class="centered-div index-year-container">
-                <h3>2020</h3>
-            </div>
-            <div class="index-project-list">
-                <a href="#awc">AWC</a> <br>
-                <a href="#space-rogue">Space Rogue</a> <br>
-            </div>
+                <div class="centered-div index-year-container">
+                    <h3>2021</h3>
+                </div>
+                <div class="index-project-list">
+                    BlockBuster
+                        <ul>
+                            <li><a href="#block-buster-editor">Editor</a></li>
+                            <li><a href="#block-buster-matchmaking">MatchMaking</a></li>
+                        </ul>
+                    <a href="#rs-lag">rs-lag</a>
+                </div>
 
-            <div class="centered-div index-year-container">
-                <h3>2019</h3>
-            </div>
-            <div class="index-project-list">
-                <a href="#DroidRisk">DroidRisk</a><br>
-                <a href="#archers-duel">Archer's Duel</a>
+                <div class="centered-div index-year-container">
+                    <h3>2020</h3>
+                </div>
+                <div class="index-project-list">
+                    <a href="#awc">AWC</a> <br>
+                    <a href="#space-rogue">Space Rogue</a> <br>
+                </div>
+
+                <div class="centered-div index-year-container">
+                    <h3>2019</h3>
+                </div>
+                <div class="index-project-list">
+                    <a href="#DroidRisk">DroidRisk</a><br>
+                    <a href="#archers-duel">Archer's Duel</a>
+                </div>
+
             </div>
         </div>
         
@@ -357,7 +361,7 @@
                                     DroidRisk is an Android malware classification tool which I presented as my Cybersecurity master project. It's implemented on Python3, using the scikit-learn library. 
                                     My approach is purely based on static analysis with the objective of achieving early detection of malware. In order to do this, I had to train four different AI models, each of them
                                     with static features of a particular category, such as Android permissions or the strings found within the app. 
-                                    After ensuring that the validity of the results employing <em>10 Fold cross validation</em>, the program scores 98% accuracy by combining the results of the four models.
+                                    After ensuring the validity of the results employing <em>10 Fold cross validation</em>, the program scores 98% accuracy by combining the results of the four models.
                                 </p>
 
                                 <p style="text-align: justify;" >
@@ -393,24 +397,26 @@
                                 <h3>Archer's Duel</h3>
                                 <p style="text-align: justify;" >
                                     In Archer's Duel you play as an archer defending your tower from the enemy archers. You must destroy their tower
-                                    before they destroy yours! For this purpose, you can combine up to six different power ups which synergize with each other,
-                                    and a powerful cannon shot that unlocks once you've dealed enough damage to the enemy tower. You can play against
+                                    before they destroy yours! For this purpose, you can combine up to six different power ups,
+                                    and a powerful cannon shot that can be unlocked during a match. You can play against
                                     the AI or against your friends through its online multiplayer mode.
                                 </p>
 
                                 <p style="text-align: justify;" >
                                     What started as one of the many clones of the popular flash game <em>Archer</em>, became its own thing after many
-                                    redesigns that were made during development. Unlike <em>Archer</em>, I wanted the game to be much more
-                                    fast paced, so I allowed player to move and jump around their tower, while keeping the ability to charge their
-                                    shots. 
+                                    redesigns that were made during early development. Unlike <em>Archer</em>, I wanted the game to be much more
+                                    fast paced, so I allowed players to move and jump around their tower, while keeping the ability to charge their
+                                    shots. Making the gameplay more dynamic, made using <em>Lockstep</em> for online multiplayer almost mandatory, as I needed
+                                    to have all clients involved perfectly in sync. This adds some input lag when playing online, because all other clients' inputs
+                                    are needed before rendering a frame.
                                 </p>
 
                                 <p style="text-align: justify;">
-                                    In an attempt to make each match different, I added six different power ups which randomly spawned around the map and had
+                                    In an attempt to make each match different, I added six different power ups which randomly spawn around the map and have
                                     to be shot by players in order to use them. The power ups you unlock can have crazy synergies. For instance, you can
                                     combine the <em>triple arrow</em> power up with the <em>fire arrow</em> one, to start shooting three fire arrows! I did also 
-                                    add a <em>killing spree like</em> reward by giving players to charge a powerful cannon shot, which unlocks by dealing damage
-                                    to the enemy tower or hitting the enemy archers with your arrows. This way you can try different strategies to win.
+                                    add a <em>killing spree like</em> reward by giving players the ability to charge a powerful cannon shot, which unlocks by dealing damage
+                                    to the enemy tower or hitting the enemy archers with your arrows. This way you can try different strategies to win a game.
                                 </p>
                             </div>
 
