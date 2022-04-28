@@ -81,6 +81,24 @@
                     <a href="#archers-duel">Archer's Duel</a>
                 </div>
 
+                <div class="centered-div index-year-container">
+                    <h3>2018</h3>
+                </div>
+                <div class="index-project-list">
+                    <a href="#sdl-pong">SDL Pong</a><br>
+                    <a href="#map-gen">MapGen</a><br>
+                    <a href="#dungeon-gen">DungeonGen</a><br>
+                    <a href="#my-craft">MyCraft</a><br>
+                    <a href="#maze-gen">MazeGen</a>
+                </div>
+
+                <div class="centered-div index-year-container">
+                    <h3>2017</h3>
+                </div>
+                <div class="index-project-list">
+                    <a href="#hard-trip">Hard Trip</a><br>
+                </div>
+
             </div>
         </div>
         
@@ -433,7 +451,56 @@
                         <div class="project-img-container">
                             <img src="https://camo.githubusercontent.com/d2af9b79a5668500862890d889d09b3a2882e939836ff932afc0dc5213233815/68747470733a2f2f696d672e697463682e7a6f6e652f6157316e4c7a49794e5467324d7a49756347356e2f6f726967696e616c2f4d7468486d472e706e67">
                         </div>
-                        
+                    </div>
+
+                    <div id="map-gen" class="project-container">
+                        <div class="project-content">
+                            <div class="project-content-text">
+                            
+                                <h3>Map Gen</h3>
+                                <p style="text-align: justify;" >
+                                    Map Gen is part of my bachelor's project about procedural content generation. With this tool, 
+                                    2D tile-based strategy maps can be generated. Some generation parameters can be tweaked to obtain different
+                                    results. Some of these parameters are: the size of the map, land, mountain and forest density, 
+                                    the amount of resources scattered around the map, whether to trace roads between the bases, etc.
+                                </p>
+
+                                <p style="text-align: justify;" >
+                                    The map generation process is fairly simple, and it somewhat resembles Conway's game of life:
+                                        <ol>
+                                            <li>The entire map is filled with water tiles.</li>
+                                            <li>A bounded random number of land tiles are placed in random positions on the map.</li>
+                                            <li>A random amount of iterations is run. On each iteration, each land tile attempts to expand to
+                                            its neighbour cells, based on some probability. The chance to expand is reduced on each iteration. </li>
+                                            <li>Steps 1 to 3 are applied for mountain tiles, but with a tweak: mountain tiles can only be placed on land tiles, instead of any tile.</li>
+                                            <li>Steps 1 to 3 are repeated for forest tiles. Similarly, forests can only spawn on grass tiles.</li>
+                                            <li>Player bases are places in random positions around the map, attempting to maximize distance between them.</li>
+                                            <li>Optionally, roads are built between the two bases. The path the road takes is calculated using Dijkstra's Algorithm, where
+                                                each tile is given an arbitrary cost. Water has the highest travel cost, while land has the lowest.
+                                            </li>
+                                            <li>As an option, resources are placed around the map. However, in an attempt to reach some balance, we use again
+                                                Dijkstra's Algorithm so the resources are placed <em>symmetrically</em>. By <em>symmetrically</em> I mean that 
+                                                when a specific resource is placed in a random position at a given distance to a player's base, another one is placed
+                                                with the same travel distance to the other player's base. That way, both players have the same amount of resources and at similar distance within
+                                                their reach.
+                                            </li>
+                                        </ol>
+                                </p>
+                            </div>
+
+                            <div style="height: 32px;">
+                                <a style="text-decoration: none;" href="https://github.com/MartGon/MapGen">
+                                    <img src="github.png" height="32">
+                                </a>
+                                <a href="https://defu.itch.io/mapgen">
+                                    <img src="https://itch.io/favicon.ico" height="32">
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="project-img-container">
+                            <img src="https://camo.githubusercontent.com/3b66e8fa8346b0f343dda7c566fe8ff69d3d567a7be9440f9504123ac162698c/68747470733a2f2f696d6775722e636f6d2f376d637a57536a2e706e67">
+                        </div>
                     </div>
 
                 </div>
