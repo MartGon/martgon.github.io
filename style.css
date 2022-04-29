@@ -9,8 +9,10 @@
 /* HEADER */
 
 .header-container{
-    width: 60%;
+    
     border-bottom: 2px solid white;
+    margin-left: 220px;
+    margin-right: 20%;
 }
 
 .header-container td{
@@ -43,10 +45,6 @@
 
 .page-container{
     width: 100%;
-
-    display: grid;
-    grid-template-columns: 20% 60% 15%;
-    grid-template-rows: auto;
 }
 
 .page-container h1{
@@ -56,6 +54,11 @@
 
 .page-container table{
     border-collapse: collapse;
+}
+
+.page-content{
+    margin-right : 20%;
+    margin-left: 220px;
 }
 
 .year-title{
@@ -78,9 +81,6 @@
 
 .section-container{
     display: block;
-}
-
-.project-content{
 }
 
 .project-content-text{
@@ -108,10 +108,19 @@
 /* PROJECT INDEX */
 
 .index-container{
-    padding-top: 10%; 
-    padding-left:10%; 
-    padding-right: 10%; 
+    padding-top: 10%;
+    padding-left: 10px;
+    padding-right: 10px;
     text-align: left;
+
+    height: 100%;
+    width: 200px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .index-container h2{
@@ -150,13 +159,11 @@
 
 @media only screen and (max-width: 1600px) {
     .header-container{
-        width: 70%;
+        
     }
 
     .page-container{
         width: 100%;
-
-        grid-template-columns: 20% 75% 5%;
     }
 }
 
@@ -169,7 +176,11 @@
     .page-container{
         width: 95%;
         margin: auto;
-        display: block;
+    }
+
+    .page-content{
+        width: 100%;
+        margin: auto;
     }
 
     .project-container{
