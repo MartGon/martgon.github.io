@@ -582,6 +582,45 @@
                         </div>
                     </div>
 
+                    <div id="my-craft" class="project-container">
+                        <div class="project-content">
+                            <div class="project-content-text">
+                            
+                                <h3>MyCraft</h3>
+                                <p style="text-align: justify;" >
+                                    MyCraft is another of my four games that make up my bachelor's project about procedural content generation. This is of course an extremely limited <em>Minecraft</em> clone. Similarly to the original,
+                                    you can choose a seed before entering the world which will dictate its shape. Once it loads, you can freely move through a pseudo infinite procedurally generated landscape.
+                                </p>
+
+                                <p style="text-align: justify;" >
+                                    Making a <em>Minecraft</em> clone wasn't necessarily planned before I started the project, but I was sure that it was something that I wanted and had to explore. That way, I discovered that 
+                                    <em>Minecraft's</em> terrain is generated using Perlin noise. Perlin noise is sampled using a <em>vec2</em> and it has the special property that the closer the sampling indices are, the higher
+                                    the correlation is between the sampled values. This allows the generation of terrains that look more natural and organic, instead of chaotic spikes or pits that would be obtained if using a different
+                                    pseudo random number generator.
+                                </p>
+
+                                <p style="text-align: justify;" >
+                                    In order to increase performance during gameplay, I had to do few a optimizations. As in the original game, blocks are distributed into groups, called <em>chunks</em>. Due to the fact that the
+                                    terrain is generated during gameplay, more chunks need to be loaded as the player moves around the world. However, in order to prevent loading all chunks at the same time, 
+                                    the game will stop loading those chunks which are far away from the player. 
+                                </p>
+                            </div>
+
+                            <div style="height: 32px;">
+                                <a style="text-decoration: none;" href="https://github.com/MartGon/MyCraft">
+                                    <img src="github.png" height="32">
+                                </a>
+                                <a href="https://defu.itch.io/mycraft">
+                                    <img src="https://itch.io/favicon.ico" height="32">
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="project-img-container">
+                            <img src="https://camo.githubusercontent.com/cfb92fea12c3e934a250eb7b562b702eaf7d4e34f4c48708e058a2eacb97c4fb/68747470733a2f2f696d6775722e636f6d2f693141723136762e706e67">
+                        </div>
+                    </div>
+
                 </div>
             </div>
             
