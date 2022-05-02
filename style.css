@@ -1,6 +1,10 @@
 
 /* GENERAL */
 
+html *{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 body {
     color:white;
     background-color: black;
