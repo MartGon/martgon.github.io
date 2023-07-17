@@ -96,7 +96,7 @@ body {
 }
 
 .project-content-text{
-    height: calc(100% - 32px);
+    /*height: calc(100% - 32px);*/
 }
 
 .project-img-container{
@@ -128,7 +128,7 @@ body {
     height: 100%;
     width: 220px;
 
-    position: fixed;
+    position: absolute;
     top: 0;
     left: calc(20% - 240px);
     overflow-x: hidden;
