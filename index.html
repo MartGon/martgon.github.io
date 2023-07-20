@@ -392,51 +392,60 @@
 
                                 <p style="text-align: justify;">
                                     After playing the game during around 3 months and wactching so many bots running wild, I decided to make my own.
-                                    Given the game was 15 years old at the time, I was sure that making my own would be feasible, as there should be a decent amount information about how the game works internally.
+                                    Given the game was 15 years old at the time, I was sure that making my own would be feasible, as there should be a decent amount of information online about how the game works internally.
                                     I also saw this as a great opportunity to deepen my knowledge about reverse engineering and game development.
                                 </p>
 
                                 <p style="text-align: justify;">
-                                    It took me 3 months of works, but I came up with a Bot which was able to <i>farm</i> (that's killing monsters and gathering resources) dungeons repeatedly.
+                                    It took me 3 months of work while stuck at home due to the pandemic, but I came up with a Bot which was able to <i>farm</i> (that's killing monsters and gathering resources) dungeons repeatedly.
                                     You can watch it working in this <i>YouTube</i> video. Here's a extremely summarized explanation of what's going on:
                                     <ol>
-                                        <li>A <i>DLL</i> (Dynamic Link Library) is injected into the game's process. This approach allows us to read/write memory and call game functions within its address space.
+                                        <li>
+                                            <p style="text-align: justify;">
+                                            A <i>DLL</i> (Dynamic Link Library) programmed in C++ is injected into the game's process. This approach allows us to read/write memory and call game functions within its address space.
                                             The memory location of relevant functions and games data were previously gathered by reverse engineering the game's executable file. This opens a console window,
                                             printing log information.
+                                            </p>
                                         </li>
-                                        <br>
+                                        
                                         <li>
+                                            <p style="text-align: justify;">
                                             Periodically, the bot attempts to connect to a Python3 Server to receive the instructions which the player character should perform during a given session. With this, we avoid recompiling the 
                                             <i>DLL</i> every time we want the bot to do a different activity. The set of actions (a behaviour) are recorded and stored in JSON files using a different Python3 program, which also communicates with the Bot
                                             to obtain information from the game. Among the actions that can be recorded and then performed by the bot, we have: Move or wait in a specific location, attract enemy NPCs within a radius, use an ability, kill enemies, etc.
+                                            </p>
                                         </li>
-                                        <br>
+                                        
                                         <li>
                                             Once the set of actions is received by the Bot, the fun begins! In this case, the bot runs through the dungeon attracting some enemies, stacks them in a specific location, and then engages in combat with them.
-                                            After all enemies are dead, it gathers all the loot from them, and returns to the inital position. Finally, the bot sells all the loot that was gathered to a vendor NPC.
+                                            After all enemies are dead, it gathers all the loot from them, and returns to the initial position. Finally, the bot sells all the loot that was gathered to a vendor NPC.
                                         </li>
                                     </ol>
                                 </p>
 
                                 <p style="text-align: justify;" >
-                                    After reading the book <i>Reversing: Secrets of Reverse Engineering</em> by Eldad Eilam</i> and gathering the following tools: 
+                                    All the testing was done in my own private <i>World of Warcraft</i> server, powered by <a href="https://www.trinitycore.org/">Trinity Core</a>, an open source project which I had contributed to in the past.
+                                    Finally, here are some of the tools and libraries that I used while working in this project:
                                     <ul>
                                         <li><a href="https://hex-rays.com/ida-pro/">IDA Pro</a> (Disassembler)</li>
                                         <li><a href="https://x64dbg.com/">x64dbg</a> (Debugger)</li>
                                         <li><a href="https://www.cheatengine.org/">Cheat Engine</a> (Memory reader)</li>
+                                        <li><a href="https://github.com/TsudaKageyu/minhook">MinHook</a> (Function Hook library)</li>
+                                        <li><a href="https://github.com/JustasMasiulis/xorstr">xortrs</a> (Compile-time string encryption library)</li>
+                                        <li><a href="https://github.com/master131/ExtremeInjector">Extreme Injector</a> (DLL Injector)</li>
                                     </ul>
                                 </p>
 
                                 <p style="text-align: justify;">
-
+                                    Before this bot, I made another version which had a strong focus in undetection, as I was initally planning to use it in the official servers, and I didn't want to get banned by <i>Blizzard</i>. The first version worked by using
+                                    a kernel driver to read memory from the game's process. Then, this data would be sent through a socket to a Python3 program which would control the player character by simulating mouse and keyboard input. Additional information was also obtained
+                                    from the game by reading pixels. Due to the fact that <i>World of Warcraft</i> has its own Lua API, which allows users to create <i>addons</i>to modify the UI or provide some utility for the game, I created my own <i>addon</i> to
+                                    show data codified as pixel colors.
                                 </p>
                             </div>
 
                             <div style="height: 32px;">
-                                <a style="text-decoration: none;" href="https://github.com/savg-studio/MiniProjectTeam1">
-                                    <img src="github.png" height="32">
-                                </a>
-                                <a href="https://defu.itch.io/space-rogue">
+                                <a href="https://youtu.be/-1HGW5XFen8">
                                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/2560px-YouTube_full-color_icon_%282017%29.svg.png" 
                                         height="30">
                                 </a>
@@ -444,8 +453,8 @@
 
                         </div>
                         <div class="project-img-container">
-                            <iframe height="100%" width="100%"
-                                src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                            <iframe height="56.25%" width="100%"
+                                src="https://www.youtube.com/embed/-1HGW5XFen8">
                             </iframe> 
                         </div>
                     </div>
