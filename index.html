@@ -61,6 +61,7 @@
                     <ul>
                         <li><a href="#awc">AWC</a></li>
                         <li><a href="#space-rogue">Space Rogue</a></li>
+                        <li><a href="#wow-bot">World of Warcraft Bot</a></li>
                     </ul>
                 </div>
 
@@ -366,6 +367,89 @@
                         </div>
                     </div>
 
+                    <div id="wow-bot" class="project-container">
+                        <div class="project-content">
+                            <div class="project-content-text">
+                            
+                                <h3>World of Warcraft Bot</h3>
+                                <!--
+                                <p style="text-align: justify;" >
+                                    On August 26, 2019 <i>World of Warcraft Classic</i> was launched. <i>World of Warcraft</i> was a game that I had
+                                    enjoyed a lot during my teenage years, and this was a return to it's first version (November, 2004), which
+                                    I missed the first time around. By the time I started playing the game,
+                                    <i>The Burning Crusade</i> (January, 2007) had already been released, which made many different changes to the original game.
+                                    Playing the <i>Classic</i> version was quite an enjoyable experience, specially during the first weeks after launch. However, after
+                                    a few months, it was not uncommon to witness one the major problems that this game has always had: Bots. After taking some lessons about reverse engineer during my Cybersecurity master and watching so many bots 
+                                    running rampant while playing the game, it sparked my interested: I'm sure I can make my own.
+                                </p>
+
+                                <p style="text-align: justify;" >
+                                    With this objective in mind I started my research. After a quick <i>Google</i> search I found <a href="https://www.ownedcore.com/">Ownedcore</a>, an online videogame hacking forum which was my starting point
+                                    in this journey. Even though many of the posts were outdated (as they were more than a decade old), so many valuable information could still be extracted from them:
+                                    which books I should read, which tools I could use, how the game stores data about the game objects, different approaches about how reading that information and interacting with the game, etc.
+                                </p>
+                                -->
+
+                                <p style="text-align: justify;">
+                                    After playing the game during around 3 months and wactching so many bots running wild, I decided to make my own.
+                                    Given the game was 15 years old at the time, I was sure that making my own would be feasible, as there should be a decent amount information about how the game works internally.
+                                    I also saw this as a great opportunity to deepen my knowledge about reverse engineering and game development.
+                                </p>
+
+                                <p style="text-align: justify;">
+                                    It took me 3 months of works, but I came up with a Bot which was able to <i>farm</i> (that's killing monsters and gathering resources) dungeons repeatedly.
+                                    You can watch it working in this <i>YouTube</i> video. Here's a extremely summarized explanation of what's going on:
+                                    <ol>
+                                        <li>A <i>DLL</i> (Dynamic Link Library) is injected into the game's process. This approach allows us to read/write memory and call game functions within its address space.
+                                            The memory location of relevant functions and games data were previously gathered by reverse engineering the game's executable file. This opens a console window,
+                                            printing log information.
+                                        </li>
+                                        <br>
+                                        <li>
+                                            Periodically, the bot attempts to connect to a Python3 Server to receive the instructions which the player character should perform during a given session. With this, we avoid recompiling the 
+                                            <i>DLL</i> every time we want the bot to do a different activity. The set of actions (a behaviour) are recorded and stored in JSON files using a different Python3 program, which also communicates with the Bot
+                                            to obtain information from the game. Among the actions that can be recorded and then performed by the bot, we have: Move or wait in a specific location, attract enemy NPCs within a radius, use an ability, kill enemies, etc.
+                                        </li>
+                                        <br>
+                                        <li>
+                                            Once the set of actions is received by the Bot, the fun begins! In this case, the bot runs through the dungeon attracting some enemies, stacks them in a specific location, and then engages in combat with them.
+                                            After all enemies are dead, it gathers all the loot from them, and returns to the inital position. Finally, the bot sells all the loot that was gathered to a vendor NPC.
+                                        </li>
+                                    </ol>
+                                </p>
+
+                                <p style="text-align: justify;" >
+                                    After reading the book <i>Reversing: Secrets of Reverse Engineering</em> by Eldad Eilam</i> and gathering the following tools: 
+                                    <ul>
+                                        <li><a href="https://hex-rays.com/ida-pro/">IDA Pro</a> (Disassembler)</li>
+                                        <li><a href="https://x64dbg.com/">x64dbg</a> (Debugger)</li>
+                                        <li><a href="https://www.cheatengine.org/">Cheat Engine</a> (Memory reader)</li>
+                                    </ul>
+                                </p>
+
+                                <p style="text-align: justify;">
+
+                                </p>
+                            </div>
+
+                            <div style="height: 32px;">
+                                <a style="text-decoration: none;" href="https://github.com/savg-studio/MiniProjectTeam1">
+                                    <img src="github.png" height="32">
+                                </a>
+                                <a href="https://defu.itch.io/space-rogue">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/2560px-YouTube_full-color_icon_%282017%29.svg.png" 
+                                        height="30">
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="project-img-container">
+                            <iframe height="100%" width="100%"
+                                src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                            </iframe> 
+                        </div>
+                    </div>
+
                     <h2 class="year-title">2019</h2>
                     
                     <div id="DroidRisk" class="project-container">
@@ -374,7 +458,6 @@
                             
                                 <h3>DroidRisk</h3>
                                 <p style="text-align: justify;" >
-                                    In spite of the fact that this project is not directly related with game development, I've decided to included it, as it was still quite interesting to make. 
                                     DroidRisk is an Android malware classification tool which I presented as my Cybersecurity master's thesis. It's implemented on Python3, using the scikit-learn library. 
                                     My approach is purely based on static analysis with the objective of achieving early detection of malware. In order to do this, I had to train four different AI models, each of them
                                     with static features of a particular category, such as Android permissions or the strings found within the app. 
@@ -387,7 +470,7 @@
                                 </p>
 
                                 <p style="text-align: justify;">
-                                    Even though AI is a topic I am not as passionate about as game development, it was still a fun experience. Previously to the development phase,
+                                    Even though AI is a topic I am not as passionate about as game development, it was still a fun and interesting experience. Previously to the development phase,
                                     I had to do intensive research of the state of the art and came with the idea of using <em>Ensemble Learning</em> after checking that the concept wasn't particularly explored
                                     in Android malware classification. Despite the fact that it wasn't necessary, I decided to assemble my own dataset of samples, which was made of around 800 applications, half of them being malware. 
                                     I found my malware samples using the webpage <a href="https://koodous.com">Koodous</a>, which is a collaborative platform were applications are uploaded at a daily basis and they are classified by many malware analysts.
