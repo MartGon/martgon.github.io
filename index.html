@@ -440,7 +440,8 @@
                                     Before this bot, I made another version which had a strong focus in undetection, as I was initally planning to use it in the official servers, and I didn't want to get banned by <i>Blizzard</i>. The first version worked by using
                                     a kernel driver to read memory from the game's process. Then, this data would be sent through a socket to a Python3 program which would control the player character by simulating mouse and keyboard input. Additional information was also obtained
                                     from the game by reading pixels. Due to the fact that <i>World of Warcraft</i> has its own Lua API, which allows users to create <i>addons</i>to modify the UI or provide some utility for the game, I created my own <i>addon</i> to
-                                    show data codified as pixel colors.
+                                    show data codified as pixel colors. However, only simple tasks such as moving and clicking on game objects could realiably be achieved with this design. Injecting a DLL to call game functions provides much more flexibility, at the risk of being more easily
+                                    detected by an anti-cheat.
                                 </p>
                             </div>
 
