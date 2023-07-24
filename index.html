@@ -33,12 +33,24 @@
             <h2>Contents</h2>
             
             <div class="index-content-container centered-div">
+                
+                <!--
+                <div class="centered-div index-year-container">
+                    <h3>2023</h3>
+                </div>
+                <div class="index-project-list">
+                    <ul>
+                        <li><a href="#roster-master">Roster Master</a></li>
+                    </ul>
+                </div>
+                -->
 
                 <div class="centered-div index-year-container">
                     <h3>2022</h3>
                 </div>
                 <div class="index-project-list">
                     <ul>
+                        <li><a href="#awc-rs">awc-rs</a></li>
                         <li><a href="#block-buster-game">BlockBuster - Game</a></li>
                     </ul>
                 </div>
@@ -114,8 +126,79 @@
             
             <div class="section-container">
                 <div class="projects-container">
+                    
+                    <!--
+                    <h2 class="year-title">2023</h2>
+
+                    <div id="roster-master" class="project-container">
+                        <div class="project-content">
+                            <div class="project-content-text">
+                            
+                                <h3>awc-rs (WIP)</h3>
+                                <p style="text-align: justify;" >
+                                    I 
+                                </p>
+
+                            </div>
+
+                            <div class="project-button-container">
+                                <a href="https://github.com/MartGon/BlockBuster">
+                                    <img src="github.png" height="32">
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="project-img-container">
+                            <img src="https://raw.githubusercontent.com/MartGon/awc-rs/main/docs/imgs/awc-rs.png">
+                        </div>
+        
+                    </div>
+                    -->
 
                     <h2 class="year-title">2022</h2>
+
+                    <div id="awc-rs" class="project-container">
+                        <div class="project-content">
+                            <div class="project-content-text">
+                            
+                                <h3>awc-rs (WIP)</h3>
+                                <p style="text-align: justify;" >
+                                    This is my second work in progress attempt at making an Advance Wars clone, my <a href="#awc">first one</a> taking back
+                                    to late 2020. Instead of resuming the development of the original project, I decided to start over, but using the Rust programming 
+                                    language as baseline this time, while also trying to avoid some mistakes of the past by taking a design-first approach. 
+                                    What I aim with this project is to make an engine which can be used to recreate the original game, 
+                                    while still leaving room to make some modifications to the formula, such as adding new attack or movement patterns, effects that can
+                                    trigger after certain events or conditions are met, etc.
+                                </p>
+
+                                <p style="text-align: justify;" >
+                                    This is a work in progress, so there are still some key features missing. At the moment of writing this, a few basics
+                                    features have already been implemented: basic map rendering, loading of unit/tiles sprites, map/unit/tile data serialization, turn/event/team system and the
+                                    movement command. Sadly, these are not enough to play a full game, because features such as an attack command or a win condition system have not been implemented 
+                                    yet. These are some of the features planned for the first complete version: 
+                                </p>
+
+                                <ul>
+                                    <li><b>Scripting Lua API</b>. This would be used to implement effects and unit behaviour without needing to recompile the game.</li>
+                                    <li><b>Economy</b>. Factory and airport system to dynamically create units during a game.</li>
+                                    <li><b>Fog of war</b></li>
+                                    <li><b>Online multiplayer</b>. Create lobbies for other people to join and play. Something similar to <a href="#block-buster-matchmaking">this</a></li>.
+                                </ul>
+
+                            </div>
+
+                            <div class="project-button-container">
+                                <a href="https://github.com/MartGon/awc-rs">
+                                    <img src="github.png" height="32">
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="project-img-container">
+                            <img src="https://raw.githubusercontent.com/MartGon/awc-rs/main/docs/imgs/awc-rs.png">
+                        </div>
+        
+                    </div>
 
                     <div id="block-buster-game" class="project-container">
                         <div class="project-content">
