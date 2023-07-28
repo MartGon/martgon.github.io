@@ -103,6 +103,17 @@ body {
     margin-left: 5%;
 }
 
+.project-img-container-intext{
+    margin-top: 2%;
+}
+
+.project-img-container-intext img{
+    height: auto;
+    width: 100%;
+    transition: 1s;
+}
+
+
 .project-img-container img{
     height: auto;
     width: 100%;
@@ -200,6 +211,11 @@ body {
     }
 
     .project-img-container{
+        margin-left: 0%;
+        margin-top: 2.5%;
+    }
+
+    .project-img-container-intext{
         margin-left: 0%;
         margin-top: 2.5%;
     }
