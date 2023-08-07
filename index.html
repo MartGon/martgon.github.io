@@ -719,17 +719,50 @@
                             
                                 <h3>QuickCashier</h3>
                                 <p style="text-align: justify;" >
-                                    
+                                    QuickCashier was the name of the project our group decided to present for the subject <i>Project's lab</i>. This subject was part of the last course of my bachelor in Telecommunications Engineering, where up to six students from the different specialties of the bachelor could team up to
+									propose and implement an idea for an entrepreneur project. After discussing many different plans, we decided to opt for one that could solve a very common problem that one of the most profitable industries face during consumption peaks. QuickCashier would be a whole new system which aimed to mitigate
+									crowding and long queues at clothing shops during sale season. This would be accomplished by using a mobile phone app which supported online payment, coupled with a secure method that allowed customers to remove the alarms by themselves, from the products they bought.
                                 </p>
+								
+								<p style="text-align: justify;" >
+									For the final version we presented, the system was composed of the following elements: 
+								</p>
+								<ul>
+									<li>
+									<p style="text-align: justify;" >
+										<b>Android application:</b> Users who wanted to employ our system would need to download the QuickCashier Android application. This would allow them to use their phone cams to scan barcodes from the products they'd like purchase. Then the application would use these codes to retrieve information about the 
+										items by doing a query agaisnt a NodeJS REST API, such at its name and price. Each scanned product would then be added into the shopping cart. Finally, the user could pay for the purchased products by using a credit-card or PayPal.
+									</p>
+									</li>									
+									<li>
+									<p style="text-align: justify;" >
+										<b>NodeJS Server:</b> We implemented a REST API in order to be employed by the Android application and our QuickMachine for some key functionalities, such as user login, handling payment transactions, updating the product-alarm association, which user is using each QuickMachine, etc. It basically works as an orchestrator for all the operations that are involved from the moment the user opens the Android application until they take out the last alarm of the products they purchased.
+									</p>
+									</li>
+									
+									<li>
+									<p style="text-align: justify;" >
+										<b>QuickMachine:</b> Implemented using a Raspberry Pi 3, the QuickMachine is running a C++ program using Qt libraries, displaying a user interface using a touchscreen. After a user has completed the payment process using our Android application, they can link their purchase with one of our QuickMachines by simply reading the QR code displayed on its screen. Once their purchase is linked, the products bought by the user should show up in a list on the touchscreen. At this stage, the user can remove the alarms from their products, by putting them in the designated space in the device. However, it is only possible to remove the alarm only if the RFID code which is held within the alarm itself, is correctly read by the RFID reader in the QuickMachine. The RFID code is then tested against our Server in order to evaluate if any of the products bought by the customer could have an alarm with that specific code. If this evaluation is correct, an electromagnet is enabled, which should allow the user to physically remove the alarm from that product.
+									</li>
+								</ul>
+								<p style="text-align: justify;">
+									QuickCashier was awarded the first prize by the company <i>Optare Solutions</i>. In addition, an article was published in one of our local news webpages, which you can check <a href="https://metropolitano.gal/enfoque/cuatro-proyectos-innovadores-que-nacieron-en-la-universidade-de-vigo/">here</a>.
+								</p>
                             </div>
 
                             <div style="height: 32px;">
+								<a href="https://youtu.be/0Gsyz67sqew">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/2560px-YouTube_full-color_icon_%282017%29.svg.png" 
+                                        height="30">
+                                </a>
                             </div>
 
                         </div>
-                        <div class="project-img-container">
-                            <img src="https://camo.githubusercontent.com/2b22ff19c5922dea2e3077e721fcd81e70043f1a69eb9f1d839357d129c650a3/68747470733a2f2f696d6775722e636f6d2f48326e65346d4c2e706e67">
-                        </div>
+						<div class="project-img-container">
+							<iframe height="416px" width="100%"
+									src="https://www.youtube.com/embed/0Gsyz67sqew">
+							</iframe> 
+						</div>
                     </div>
 
                     <div id="map-gen" class="project-container">
