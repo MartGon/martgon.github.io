@@ -18,6 +18,11 @@ body {
     margin-right: auto;
 }
 
+.centered-iframe {
+    display: block;
+    margin: 0 auto;
+}
+
 /* HEADER */
 
 .header-container{
@@ -91,12 +96,12 @@ body {
     padding-bottom: 2%;
 }
 
-.section-container{
+.project-container-block{
     display: block;
 }
 
-.project-content-text{
-    /*height: calc(100% - 32px);*/
+.section-container{
+    display: block;
 }
 
 .project-img-container{
